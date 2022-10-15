@@ -1,0 +1,16 @@
+.hamburgerIcon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburgerIcon {
+        display: flex;
+        cursor: pointer;
+
+        transition: opacity 0.2s;
+    }
+
+    .hamburgerIcon:hover {
+        opacity: 0.3;
+    }
+}
