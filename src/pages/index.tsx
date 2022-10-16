@@ -94,36 +94,29 @@ const Home: NextPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section>
+                <div className="bg-black rounded-bl-xl rounded-tr-xl">
+                    <h1 className="text-white flex justify-end p-4">Regras</h1>
+
+                    <div>
+                        <p className="text-white p-4">
+                            O jogo de Xadrez é disputado por duas pessoas em um
+                            tabuleiro 8x8, com 32 peças (16 para cada jogador)
+                            de seis tipos diferentes. Cada tipo de peça move-se
+                            de forma distinta. O objetivo do jogo é dar o
+                            xeque-mate ao rei adversário, isto é, ameaçar o Rei
+                            do oponente com a captura inevitável. Os jogos não
+                            precisam terminar necessariamente com o xeque-mate
+                            pois os jogadores podem desistir a qualquer momento
+                            se acreditarem que perderão a partida. Além disso,
+                            existem várias formas de um jogo terminar empatado.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </>
     );
 };
 
 export default Home;
-
-/*<div className="flex absolute items-center w-16 h-14 top-36 left-24">
-                            <img
-                                src="/img/logo-mate.png"
-                                alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
-                            />
-                            <p>Junte-se a maior comunida de xadrez do brasil</p>
-                            <button>Juntar-se</button>
-                        </div>*/
-
-/*<section className="mt-2">
-                <div>
-                    <picture>
-                        <source //Source = Usado apra mudar as imagens entre mobile e desktop
-                            media="(max-width: 640px)"
-                            srcSet="/img/paginamobile-inicial.png"
-                        ></source>
-                        <source //Source = Usado apra mudar as imagens entre mobile e desktop
-                            media="(min-width: 640px)"
-                            srcSet="/img/pagina-inicial.png"
-                        ></source>
-                        <img
-                            src="/img/pagina-inicial.png"
-                            alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
-                        />
-                    </picture>
-                </div>
-            </section>*/
