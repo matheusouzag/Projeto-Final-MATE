@@ -14,6 +14,7 @@ const Home: NextPage = () => {
                         srcSet="/img/pagina-inicial.png"
                     ></source>
                     <img
+                        className="w-full"
                         src="/img/pagina-inicial.png"
                         alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
                     />
@@ -22,16 +23,17 @@ const Home: NextPage = () => {
 
             <section>
                 <div>
-                    <div className="container mx-auto px-20">
+                    <div className="px-20 md:pr-0">
                         <h1 className="flex justify-center sm:justify-start sm:mt-4 mt-2 font-extrabold mb-2">
                             História do Xadrez
                         </h1>
-                        <div className="sm:container sm:flex sm:flex-row-reverse ">
-                            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+                        <div className="sm:container sm:flex sm:flex-row-reverse sm:space-y-4">
+                            <div className="grid grid-cols-2 grid-rows-2 gap-4 md:w-72">
                                 <div className="col-span-2">
                                     <img
                                         src="img/historia-1.png"
                                         alt="xadrez"
+                                        className="w-"
                                     />
                                 </div>
                                 <div>
@@ -49,7 +51,7 @@ const Home: NextPage = () => {
                                     />
                                 </div>
                             </div>
-                            <div className="mx-auto font-medium sm:mr-36">
+                            <div className="mx-auto font-medium sm:space-y-8">
                                 <p className="mt-4">
                                     Há um consenso entre os historiadores de que
                                     a Índia é o mais provável berço do esporte.
