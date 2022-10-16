@@ -36,7 +36,10 @@ const Header = () => {
                 </div>
                 {menuOpen && (
                     <nav>
-                        <ul className="sm:flex sm:flex-row sm:items-center sm:gap-12 sm:space-y-0 font-extrabold flex flex-col items-end space-y-1">
+                        <ul
+                            className="sm:flex sm:flex-row sm:items-center sm:gap-12 sm:space-y-0 font-black flex flex-col items-end space-y-1"
+                            style={{ fontFamily: "Spectral" }}
+                        >
                             <li>
                                 <a
                                     className="mt- hover:underline transition-all hover:text-gray-400 focus:text-gray-400 focus:outline-none"
