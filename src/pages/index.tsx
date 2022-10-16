@@ -7,15 +7,15 @@ const Home: NextPage = () => {
                 <picture>
                     <source //Source = Usado apra mudar as imagens entre mobile e desktop
                         media="(max-width: 640px)"
-                        srcSet="/img/paginamobile-inicial.png"
+                        srcSet="/img/paginamobile-inicial2.png"
                     ></source>
                     <source //Source = Usado apra mudar as imagens entre mobile e desktop
                         media="(min-width: 640px)"
-                        srcSet="/img/pagina-inicial.png"
+                        srcSet="/img/pagina-inicial2.png"
                     ></source>
                     <img
                         className="w-full"
-                        src="/img/pagina-inicial.png"
+                        src="/img/pagina-inicial2.png"
                         alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
                     />
                 </picture>
