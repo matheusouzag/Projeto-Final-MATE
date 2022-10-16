@@ -6,20 +6,21 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(true);
 
     useEffect(() => {
+        //Usado para que não suma a navbar no modo desktop
         window.addEventListener("resize", () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 640) {
                 setMenuOpen(true);
             }
         });
     }, []);
 
     return (
-        <header className="mx-4 md:flex md:items-center md:justify-center md:h-20 md:bg-white">
-            <div className="md:flex md:items-center md:justify-between md:max-w-7xl md:mx-auto md:w-full">
+        <header className="mx-4 sm:flex sm:items-center sm:justify-center sm:h-20 sm:bg-white">
+            <div className="sm:flex sm:items-center sm:justify-between sm:max-w-7xl sm:mx-auto sm:w-full">
                 <div className="flex justify-between items-center ">
                     <picture>
                         <img
-                            className="w-16 mt-3 md:mt-0"
+                            className="w-16 mt-3 sm:mt-0"
                             src="/img/logo-mate.png"
                             alt="Logo da Mate"
                         />
@@ -27,6 +28,7 @@ const Header = () => {
                     <FiMenu
                         size={20}
                         onClick={() => {
+                            //onClick para quando clicar no icone de hamburger aparecer os itens
                             setMenuOpen(!menuOpen);
                         }}
                         className={styles.hamburgerIcon}
@@ -34,10 +36,10 @@ const Header = () => {
                 </div>
                 {menuOpen && (
                     <nav>
-                        <ul className="md:flex md:flex-row md:items-center md:gap-12 font-extrabold flex flex-col items-end space-y-1">
+                        <ul className="sm:flex sm:flex-row sm:items-center sm:gap-12 sm:space-y-0 font-extrabold flex flex-col items-end space-y-1">
                             <li>
                                 <a
-                                    className="hover:underline transition-all hover:text-gray-400 focus:text-gray-400 focus:outline-none"
+                                    className="mt- hover:underline transition-all hover:text-gray-400 focus:text-gray-400 focus:outline-none"
                                     href="#historia"
                                 >
                                     História
