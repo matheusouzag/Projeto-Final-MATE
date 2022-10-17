@@ -20,8 +20,10 @@ const Home: NextPage = () => {
                             alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
                         />
                     </picture>
-                    <button className="absolute top-1/2 left-2/4">
-                        Juntar-se
+                    <button className="absolute top-1/2 right-1/2 text-center font-bold text-xs bg-white rounded-sm px-4 translate-x-2/3 -translate-y-2/3 lg:py-1 lg:px-8 lg:text-lg lg:rounded-2xl">
+                        <a href="https://www.chess.com/home" target="_blank">
+                            Juntar-se
+                        </a>
                     </button>
                 </div>
             </section>
@@ -96,6 +98,27 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="bg-black rounded-bl-xl rounded-tr-xl">
+                    <h1 className="text-white flex justify-end p-4">Regras</h1>
+
+                    <div>
+                        <p className="text-white p-4">
+                            O jogo de Xadrez é disputado por duas pessoas em um
+                            tabuleiro 8x8, com 32 peças (16 para cada jogador)
+                            de seis tipos diferentes. Cada tipo de peça move-se
+                            de forma distinta. O objetivo do jogo é dar o
+                            xeque-mate ao rei adversário, isto é, ameaçar o Rei
+                            do oponente com a captura inevitável. Os jogos não
+                            precisam terminar necessariamente com o xeque-mate
+                            pois os jogadores podem desistir a qualquer momento
+                            se acreditarem que perderão a partida. Além disso,
+                            existem várias formas de um jogo terminar empatado.
+                        </p>
                     </div>
                 </div>
             </section>
