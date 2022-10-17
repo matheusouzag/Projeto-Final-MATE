@@ -3,23 +3,28 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
     return (
         <>
-            <div className="mt-2">
-                <picture>
-                    <source //Source = Usado apra mudar as imagens entre mobile e desktop
-                        media="(max-width: 640px)"
-                        srcSet="/img/paginamobile-inicial.png"
-                    ></source>
-                    <source //Source = Usado apra mudar as imagens entre mobile e desktop
-                        media="(min-width: 640px)"
-                        srcSet="/img/pagina-inicial.png"
-                    ></source>
-                    <img
-                        className="w-full"
-                        src="/img/pagina-inicial.png"
-                        alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
-                    />
-                </picture>
-            </div>
+            <section>
+                <div className="relative mt-2">
+                    <picture>
+                        <source //Source = Usado apra mudar as imagens entre mobile e desktop
+                            media="(max-width: 640px)"
+                            srcSet="/img/paginamobile-inicial2.png"
+                        ></source>
+                        <source //Source = Usado apra mudar as imagens entre mobile e desktop
+                            media="(min-width: 640px)"
+                            srcSet="/img/pagina-inicial2.png"
+                        ></source>
+                        <img
+                            className="w-full"
+                            src="/img/pagina-inicial2.png"
+                            alt="Um tabuleiro de xadrez, com a logo da comunidade MATE"
+                        />
+                    </picture>
+                    <button className="absolute top-1/2 left-2/4">
+                        Juntar-se
+                    </button>
+                </div>
+            </section>
 
             <section>
                 <div>
