@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
 
+/* Observação: por algum motivo não estavamos conseguindo 
+importar os arquivos css, logo a criação de classes foi tudo no global.css */
+
 const Home: NextPage = () => {
     return (
         <>
