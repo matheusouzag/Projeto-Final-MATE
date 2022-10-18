@@ -6,7 +6,3 @@
     font-family: "Spectral";
     src: url("/fonts/Spectral.ttf") format("truetype");
 }
-
-.flip {
-    background-color: red;
-}

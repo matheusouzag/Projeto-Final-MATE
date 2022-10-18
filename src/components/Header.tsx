@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
-import styles from "./Header.module.css";
+import peste from "./Header.module.css";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(true);
@@ -31,7 +31,7 @@ const Header = () => {
                             //onClick para quando clicar no icone de hamburger aparecer os itens
                             setMenuOpen(!menuOpen);
                         }}
-                        className={styles.hamburgerIcon}
+                        className={peste.hamburgerIcon}
                     />
                 </div>
                 {menuOpen && (
