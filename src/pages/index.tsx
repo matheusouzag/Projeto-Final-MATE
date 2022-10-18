@@ -29,7 +29,7 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
-            <section>
+            <section id="historia">
                 <div>
                     <div className="md:px-24 lg:px-24 p-6">
                         <div className="sm:flex sm:flex-row-reverse sm:justify-center sm:space-y-4 sm:gap-4">
@@ -103,9 +103,79 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="bg-black rounded-bl-xl rounded-tr-xl mx-auto px-6 sm:px-20 lg:px-60 text-white ">
+            <section id="regras">
+                <div className="bg-black rounded-bl-xl rounded-tr-xl mx-auto px-6 text-white ">
                     <h1
+                        className="flex justify-center  font-extrabold text-2xl p-4"
+                        style={{ fontFamily: "Spectral" }}
+                    >
+                        Regras
+                    </h1>
+                    <div className="space-y-4 p-2 sm:flex sm:flex-row sm:p-0 sm:gap-14 sm:justify-center sm:pb-8 lg:pt-5 lg:px-24 2xl:px-72 2xl:gap-40">
+                        <p
+                            className="text-lg font-light sm:w-1/2 flex justify-center 2xl:items-center"
+                            style={{ fontFamily: "Spectral" }}
+                        >
+                            O jogo de Xadrez é disputado por duas pessoas em um
+                            tabuleiro 8x8, com 32 peças (16 para cada jogador)
+                            de seis tipos diferentes. Cada tipo de peça move-se
+                            de forma distinta. O objetivo do jogo é dar o
+                            xeque-mate ao rei adversário, isto é, ameaçar o Rei
+                            do oponente com a captura inevitável. Os jogos não
+                            precisam terminar necessariamente com o xeque-mate
+                            pois os jogadores podem desistir a qualquer momento
+                            se acreditarem que perderão a partida. Além disso,
+                            existem várias formas de um jogo terminar empatado.
+                        </p>
+
+                        <div className="grid grid-cols-3 grid-rows-2 gap-1 texto pb-4 sm:pb-0 lg:w-1/2 ">
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/peao.png"
+                                    content="Peão: pode andar uma ou duas casas a frente, e captura na diagonal"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/cavalo.png"
+                                    content="O movimento corresponde ao “L”, sendo duas casas em linha reta e uma ao lado"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/rainha.png"
+                                    content="A rainha é capaz de movimentar em todas direções, quantas casas desejar"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/bispo.png"
+                                    content="O bispo consegue se mover diagonalmente"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/torre.png"
+                                    content="A torre pode se mover horizontalmente e verticalmente"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/rei.png"
+                                    content="O rei pode se mover em todas as direções, mas apenas uma casa"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+};
+
+export default Home;
+
+/*  <h1
                         className="flex justify-center  font-extrabold text-2xl p-4"
                         style={{ fontFamily: "Spectral" }}
                     >
@@ -167,11 +237,4 @@ const Home: NextPage = () => {
                                 content="O rei pode se mover em todas as direções, mas apenas uma casa"
                             />
                         </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    );
-};
-
-export default Home;
+                    </div> */
