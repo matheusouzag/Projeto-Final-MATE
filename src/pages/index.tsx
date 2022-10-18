@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Flipcard from "../components/Flip-card";
 
+/* Observação: por algum motivo não estavamos conseguindo 
+importar os arquivos css, logo a criação de classes foi tudo no global.css */
+
 const Home: NextPage = () => {
     return (
         <>
@@ -174,67 +177,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-/*  <h1
-                        className="flex justify-center  font-extrabold text-2xl p-4"
-                        style={{ fontFamily: "Spectral" }}
-                    >
-                        Regras
-                    </h1>
-                    <div className="grid grid-cols-3 grid-rows-4 gap-2 p-2 sm:grid sm:grid-cols-6 sm:grid-rows-2 lg:px-20 lg:mt-5">
-                        <div className="col-span-3 row-span-2">
-                            <div
-                                className="h-1/2 font-extralight text-xl lg:text-xl "
-                                style={{ fontFamily: "Spectral" }}
-                            >
-                                O jogo de Xadrez é disputado por duas pessoas em
-                                um tabuleiro 8x8, com 32 peças (16 para cada
-                                jogador) de seis tipos diferentes. Cada tipo de
-                                peça move-se de forma distinta. O objetivo do
-                                jogo é dar o xeque-mate ao rei adversário, isto
-                                é, ameaçar o Rei do oponente com a captura
-                                inevitável. Os jogos não precisam terminar
-                                necessariamente com o xeque-mate pois os
-                                jogadores podem desistir a qualquer momento se
-                                acreditarem que perderão a partida. Além disso,
-                                existem várias formas de um jogo terminar
-                                empatado.
-                            </div>
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/peao.png"
-                                content="Peão: pode andar uma ou duas casas a frente, e captura na diagonal"
-                            />
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/cavalo.png"
-                                content="O movimento corresponde ao “L”, sendo duas casas em linha reta e uma ao lado"
-                            />
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/rainha.png"
-                                content="A rainha é capaz de movimentar em todas direções, quantas casas desejar"
-                            />
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/bispo.png"
-                                content="O bispo consegue se mover diagonalmente"
-                            />
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/torre.png"
-                                content="A torre pode se mover horizontalmente e verticalmente"
-                            />
-                        </div>
-                        <div className="texto">
-                            <Flipcard
-                                imgPeca="/img/Pecas/rei.png"
-                                content="O rei pode se mover em todas as direções, mas apenas uma casa"
-                            />
-                        </div>
-                    </div> */
