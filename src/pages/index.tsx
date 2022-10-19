@@ -1,7 +1,10 @@
-import "swiper/css";
+import "swiper/css"; /* Import usado para o carrossel */
 import type { NextPage } from "next";
 import Flipcard from "../components/Flip-card";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {
+    Swiper,
+    SwiperSlide,
+} from "swiper/react"; /* Import usado para o carrossel  */
 import SecaoJogadas from "../components/SecaoJogadas";
 
 /* Observação: por algum motivo não estavamos conseguindo 
@@ -10,6 +13,7 @@ importar os arquivos css, logo a criação de classes está no global.css */
 const Home: NextPage = () => {
     return (
         <>
+            {/* Pagina inicial*/}
             <section>
                 <div className="relative mt-2">
                     <picture>
@@ -35,6 +39,7 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
+            {/*História do xadrez*/}
             <section>
                 <div>
                     <div className="md:px-24 lg:px-24 p-8">
@@ -116,6 +121,8 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
+            {/*Regras*/}
+
             <section id="regras">
                 <div className="bg-black rounded-bl-xl rounded-tr-xl mx-auto px-6 text-white ">
                     <h1
@@ -183,7 +190,8 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
-            {/* sessãojogadas */}
+            {/* Jogadas */}
+
             <section id="jogadas">
                 <div
                     className="flex flex-row p-4 justify-between w-full border-b-2 border-black"
@@ -238,7 +246,9 @@ const Home: NextPage = () => {
                 </Swiper>
             </section>
 
-            <section>
+            {/* Planos */}
+
+            <section id="planos">
                 <div
                     className="text-white flex flex-col  bg-black  p-4 justify-center items-center rounded-md"
                     style={{ fontFamily: "Spectral" }}
@@ -290,7 +300,9 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
-            <section>
+            {/* Mestres */}
+
+            <section id="mestres">
                 <div className="space-y-3 sm:flex sm:justify-center">
                     <div className="sm:flex sm:flex-wrap">
                         <div className="flex flex-row justify-between w-full border-b-2 border-black p-4">
