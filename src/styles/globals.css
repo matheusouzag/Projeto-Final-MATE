@@ -7,6 +7,8 @@
     src: url("/fonts/Spectral.ttf") format("truetype");
 }
 
+/* Responsividade dos cards */
+
 .flip-card-container {
     height: 190px;
     width: 100%;
@@ -84,6 +86,7 @@
     background-color: white;
 
     /* Para o card girar no eixo Y */
+
     transform: rotateY(180deg);
 }
 
@@ -122,5 +125,3 @@
     font-size: small;
     font-family: Spectral;
 }
-
-/* Carrossel */
