@@ -12,6 +12,7 @@ module.exports = {
         'border-5' :' 5px',
         
       }
+    
     },
   },
   plugins: [],
