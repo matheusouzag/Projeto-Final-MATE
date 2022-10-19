@@ -6,6 +6,7 @@ module.exports = {
 
   ],
   theme: {
+    
     extend: {
       borderWidth : {
         'border-5' :' 5px',

@@ -1,5 +1,11 @@
 import type { NextPage } from "next";
 
+/* Observação: por algum motivo não estavamos conseguindo 
+importar os arquivos css, logo a criação de classes foi tudo no global.css */
+
+/* Observação: por algum motivo não estavamos conseguindo 
+importar os arquivos css, logo a criação de classes foi tudo no global.css */
+
 const Home: NextPage = () => {
     return (
         <>
@@ -28,7 +34,7 @@ const Home: NextPage = () => {
                 </div>
             </section>
 
-            <section>
+            <section id="historia">
                 <div>
                     <div className="md:px-24 lg:px-24 p-6">
                         <div className="sm:flex sm:flex-row-reverse sm:justify-center sm:space-y-4 sm:gap-4">
@@ -36,21 +42,21 @@ const Home: NextPage = () => {
                                 <div className="col-span-2">
                                     <img
                                         src="img/historia-1.png"
-                                        alt="xadrez"
+                                        alt="16 peões envolta de um rei"
                                         className="h-full"
                                     />
                                 </div>
                                 <div>
                                     <img
                                         src="img/historia-2.png"
-                                        alt="xadrez"
+                                        alt="Um rei preto solitário"
                                         className="h-full"
                                     />
                                 </div>
                                 <div>
                                     <img
                                         src="img/historia-3.png"
-                                        alt="xadrez"
+                                        alt="Um rei preto e o rei branco derrubado"
                                         className="h-full"
                                     />
                                 </div>
@@ -98,6 +104,139 @@ const Home: NextPage = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="object-contain flex justify-end p-1">
+                    <img
+                        src="/img/icone-pecas.png"
+                        alt="Todas as peças de xadrez alinhadas"
+                    />
+                </div>
+            </section>
+
+            <section id="regras">
+                <div className="bg-black rounded-bl-xl rounded-tr-xl mx-auto px-6 text-white ">
+                    <h1
+                        className="flex justify-center  font-extrabold text-2xl p-4"
+                        style={{ fontFamily: "Spectral" }}
+                    >
+                        Regras
+                    </h1>
+                    <div className="space-y-4 p-2 sm:flex sm:flex-row sm:p-0 sm:gap-14 sm:justify-center sm:pb-8 lg:pt-5 lg:px-24 2xl:px-72 2xl:gap-40">
+                        <p
+                            className="text-lg font-light sm:w-1/2 flex justify-center 2xl:items-center"
+                            style={{ fontFamily: "Spectral" }}
+                        >
+                            O jogo de Xadrez é disputado por duas pessoas em um
+                            tabuleiro 8x8, com 32 peças (16 para cada jogador)
+                            de seis tipos diferentes. Cada tipo de peça move-se
+                            de forma distinta. O objetivo do jogo é dar o
+                            xeque-mate ao rei adversário, isto é, ameaçar o Rei
+                            do oponente com a captura inevitável. Os jogos não
+                            precisam terminar necessariamente com o xeque-mate
+                            pois os jogadores podem desistir a qualquer momento
+                            se acreditarem que perderão a partida. Além disso,
+                            existem várias formas de um jogo terminar empatado.
+                        </p>
+
+                        <div className="grid grid-cols-3 grid-rows-2 gap-1 texto pb-4 sm:pb-0 lg:w-1/2 ">
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/peao.png"
+                                    content="Peão: pode andar uma ou duas casas a frente, e captura na diagonal"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/cavalo.png"
+                                    content="O movimento corresponde ao “L”, sendo duas casas em linha reta e uma ao lado"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/rainha.png"
+                                    content="A rainha é capaz de movimentar em todas direções, quantas casas desejar"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/bispo.png"
+                                    content="O bispo consegue se mover diagonalmente"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/torre.png"
+                                    content="A torre pode se mover horizontalmente e verticalmente"
+                                />
+                            </div>
+                            <div>
+                                <Flipcard
+                                    imgPeca="/img/Pecas/rei.png"
+                                    content="O rei pode se mover em todas as direções, mas apenas uma casa"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="p-4 space-y-3 sm:px-40">
+                    <h1>Grandes mestres</h1>
+                    <div className="space-y-3 sm:flex sm:flex-row sm:justify-center">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg "
+                            src="/img/mestres/magnus.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40 text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero suscipit error inventore et voluptate
+                            cumque iure porro voluptatum, necessitatibus amet
+                            sint corporis optio assumenda maxime sapiente
+                            debitis adipisci quasi, nam nostrum, minima
+                            quibusdam natus totam incidunt sequi. Possimus illo
+                            accusantium ipsum nihil inventore, quidem quibusdam
+                            accusamus pariatur cum esse tempora necessitatibus
+                            excepturi ducimus quod expedita, amet eligendi
+                            itaque doloribus? Nesciunt voluptate incidunt cum
+                            repellat atque magnam cupiditate sed repellendus
+                            exercitationem aliquam? Debitis et cum aperiam culpa
+                            quo odio rem placeat.
+                        </p>
+                    </div>
+                    <div className="space-y-3 sm:flex sm:flex-row-reverse ">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg"
+                            src="/img/mestres/bobby.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40  text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Tempora deleniti labore animi quam sapiente
+                            officia repudiandae magni alias obcaecati odio!
+                        </p>
+                    </div>
+                    <div className="space-y-3 sm:flex sm:flex-row">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg"
+                            src="/img/mestres/kasparov.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40  text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vero corrupti aut rem aspernatur dolor
+                            ratione, velit praesentium? Officiis, nesciunt
+                            deleniti!
+                        </p>
                     </div>
                 </div>
             </section>
