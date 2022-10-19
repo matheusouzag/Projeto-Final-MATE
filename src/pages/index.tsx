@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Flipcard from "../components/Flip-card";
 
 /* Observação: por algum motivo não estavamos conseguindo 
 importar os arquivos css, logo a criação de classes foi tudo no global.css */
