@@ -40,21 +40,21 @@ const Home: NextPage = () => {
                                 <div className="col-span-2">
                                     <img
                                         src="img/historia-1.png"
-                                        alt="xadrez"
+                                        alt="16 peões envolta de um rei"
                                         className="h-full"
                                     />
                                 </div>
                                 <div>
                                     <img
                                         src="img/historia-2.png"
-                                        alt="xadrez"
+                                        alt="Um rei preto solitário"
                                         className="h-full"
                                     />
                                 </div>
                                 <div>
                                     <img
                                         src="img/historia-3.png"
-                                        alt="xadrez"
+                                        alt="Um rei preto e o rei branco derrubado"
                                         className="h-full"
                                     />
                                 </div>
@@ -103,6 +103,13 @@ const Home: NextPage = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="object-contain flex justify-end p-1">
+                    <img
+                        src="/img/icone-pecas.png"
+                        alt="Todas as peças de xadrez alinhadas"
+                    />
                 </div>
             </section>
 
@@ -169,6 +176,65 @@ const Home: NextPage = () => {
                                 />
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="p-4 space-y-3 sm:px-40">
+                    <h1>Grandes mestres</h1>
+                    <div className="space-y-3 sm:flex sm:flex-row sm:justify-center">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg "
+                            src="/img/mestres/magnus.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40 text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero suscipit error inventore et voluptate
+                            cumque iure porro voluptatum, necessitatibus amet
+                            sint corporis optio assumenda maxime sapiente
+                            debitis adipisci quasi, nam nostrum, minima
+                            quibusdam natus totam incidunt sequi. Possimus illo
+                            accusantium ipsum nihil inventore, quidem quibusdam
+                            accusamus pariatur cum esse tempora necessitatibus
+                            excepturi ducimus quod expedita, amet eligendi
+                            itaque doloribus? Nesciunt voluptate incidunt cum
+                            repellat atque magnam cupiditate sed repellendus
+                            exercitationem aliquam? Debitis et cum aperiam culpa
+                            quo odio rem placeat.
+                        </p>
+                    </div>
+                    <div className="space-y-3 sm:flex sm:flex-row-reverse ">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg"
+                            src="/img/mestres/bobby.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40  text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Tempora deleniti labore animi quam sapiente
+                            officia repudiandae magni alias obcaecati odio!
+                        </p>
+                    </div>
+                    <div className="space-y-3 sm:flex sm:flex-row">
+                        <img
+                            width={432}
+                            height={298}
+                            className="rounded-lg"
+                            src="/img/mestres/kasparov.jpg"
+                            alt=""
+                        />
+                        <p className="p-4 sm:px-40  text-white bg-black rounded-lg ">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vero corrupti aut rem aspernatur dolor
+                            ratione, velit praesentium? Officiis, nesciunt
+                            deleniti!
+                        </p>
                     </div>
                 </div>
             </section>

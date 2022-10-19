@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
     return (
         <div
-            className="flex flex-col justify-center items-center font-black mt-3 mx-4 gap-2 bg-white"
+            className="flex flex-col justify-center items-center font-black mt-3 gap-2 bg-black text-white"
             style={{ fontFamily: "Spectral" }}
         >
             <p className="text-lg ">
